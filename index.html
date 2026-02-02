@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Do Not Open Unless You Are Dev Babu 🙈</title>
+<title>Do Not Open Unless You Are Dev Babu 😼😼</title>
 
 <style>
 body{
@@ -53,17 +53,15 @@ button{
     left:185px;
     top:130px;
 }
+
+/* Floating hearts */
 @keyframes floatUp {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-120vh);
-    opacity: 0;
-  }
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-120vh); opacity: 0; }
 }
-    .dare{
+
+/* Dare text blink */
+.dare{
   font-size:14px;
   color:#ff4d6d;
   font-weight:bold;
@@ -81,7 +79,9 @@ button{
 <body>
 
 <div class="card" id="card">
-    <h1>Dev babu 😘<br>Will you be my Valentine? 💖<br><br>
+    <h1>
+        Dev babu 😘<br>
+        Will you be my Valentine? 💖<br><br>
         <span class="dare">Dare to press NO 😏</span>
     </h1>
 
@@ -92,7 +92,7 @@ button{
 <script>
 const noBtn = document.getElementById("no");
 const card = document.getElementById("card");
-    
+
 const noTexts = [
   "Nooo 😡",
   "Nahi 😽",
@@ -121,23 +121,21 @@ function moveButton() {
   noBtn.innerText = randomText;
 }
 
-// Mobile touch (most important)
+// Mobile
 noBtn.addEventListener("touchstart", function(e){
     e.preventDefault();
     moveButton();
 });
 
-// Backup for laptops
+// Desktop backup
 noBtn.addEventListener("mouseover", moveButton);
 
 // YES button
 document.getElementById("yes").onclick = function () {
   window.location.href = "yes.html";
 };
-</script>
 
-<!-- HEARTS -->
-<script>
+// HEARTS
 setInterval(() => {
   const heart = document.createElement("div");
   heart.innerHTML = "❤️";
@@ -149,13 +147,8 @@ setInterval(() => {
   heart.style.pointerEvents = "none";
   document.body.appendChild(heart);
   setTimeout(() => heart.remove(), 4000);
-}, 600);    
+}, 600);
 </script>
-    
+
 </body>
 </html>
-
-
-
-
-
