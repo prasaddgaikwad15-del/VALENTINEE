@@ -68,7 +68,7 @@ button{
 <script>
 const noBtn = document.getElementById("no");
 const card = document.getElementById("card");
-
+    
 const noTexts = [
   "Nooo 😡",
   "Nahi 😽",
@@ -94,9 +94,9 @@ function moveButton() {
 }
 
 // Mobile touch (most important)
-noBtn.addEventListener("touchstart", function(e) {
-  e.preventDefault();
-  moveButton();
+noBtn.addEventListener("touchstart", function(e){
+    e.preventDefault();
+    moveButton();
 });
 
 // Backup for laptops
@@ -110,3 +110,4 @@ document.getElementById("yes").onclick = function () {
 </body>
 
 </html>
+
